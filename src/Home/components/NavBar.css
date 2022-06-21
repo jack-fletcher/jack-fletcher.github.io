@@ -1,0 +1,46 @@
+:root {
+    --main-bg-color: #fefbe9;
+    --main-text-color: #183a1d;
+    --accent-bg-color: #e1eedd;
+    --accent-text-color: #f0a04b;
+    --accent-underline-color: #f6c453;
+}
+
+.nav {
+ display: flex;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+.navAuthorName{
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: start;
+    flex: 1;
+    color: var(--accent-text-color);
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.navItems {
+    margin: auto;
+    display: flex;
+    color: black;
+    justify-content: end;
+}
+
+.navText {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.navText:visited {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.navText:hover{
+    color: var(--accent-text-color);
+}

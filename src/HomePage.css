@@ -1,0 +1,11 @@
+:root {
+    --main-bg-color: #fefbe9;
+    --main-text-color: #183a1d;
+    --accent-bg-color: #e1eedd;
+    --accent-text-color: #f0a04b;
+    --accent-underline-color: #f6c453;
+}
+
+.HomePage {
+    background-color: var(--main-bg-color);
+}
