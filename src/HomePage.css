@@ -1,11 +1,37 @@
 :root {
-    --main-bg-color: #fefbe9;
-    --main-text-color: #183a1d;
-    --accent-bg-color: #e1eedd;
-    --accent-text-color: #f0a04b;
-    --accent-underline-color: #f6c453;
+    --global-main-bg-color: #fefbe9;
+    --global-main-text-color: #183a1d;
+    --global-main-accent-bg-color: #e1eedd;
+    --global-accent-text-color: #f0a04b;
+    --global-accent-underline-color: #f6c453;
+}
+.FullScreen {
+    position: relative;
+    /* Height and width fallback for older browsers. */
+    height: 100%;
+    width: 100%;
+
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+
+    /* Remove any browser-default margins. */
+    margin: 0;
+}
+.HomePage {
+    background-color: var(--global-main-bg-color);
+}
+.backgroundColour {
+    background-color: var(--global-main-bg-color);
 }
 
-.HomePage {
-    background-color: var(--main-bg-color);
+.altBackgroundColour {
+    background-color: var(--global-main-accent-bg-color);
 }
+@keyframes fadeIn {
+    0% { opacity: 0; visibility: hidden;}
+    100% { opacity: 1; visibility: visible;}
+  }
+  

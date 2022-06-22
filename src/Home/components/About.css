@@ -1,0 +1,63 @@
+.AboutMeTitle{
+    padding: 0%;
+    margin: auto;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.TitleText {
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+}
+
+.SupportingText {
+    text-align: center;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.FadeIn2s {
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+.FadeIn3s {
+    animation: fadeIn 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.FadeIn4s {
+    animation: fadeIn 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.FadeIn5s {
+    animation: fadeIn 2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+.custom-shape-divider-bottom-1655858920 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1655858920 svg {
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 264px;
+}
+
+.custom-shape-divider-bottom-1655858920 .shape-fill {
+    fill: var(--global-main-accent-bg-color);
+}

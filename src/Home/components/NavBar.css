@@ -1,46 +1,54 @@
-:root {
-    --main-bg-color: #fefbe9;
-    --main-text-color: #183a1d;
-    --accent-bg-color: #e1eedd;
-    --accent-text-color: #f0a04b;
-    --accent-underline-color: #f6c453;
-}
 
 .nav {
+ animation: fadeIn 3s;
+ background-color: var(--global-main-bg-color); 
+ position: fixed;
+ width: 100%;
  display: flex;
  padding-top: 10px;
  padding-bottom: 10px;
+ z-index: 1;
 }
 
 .navAuthorName{
     padding-left: 5%;
     padding-right: 5%;
     justify-content: start;
-    flex: 1;
-    color: var(--accent-text-color);
+    flex: 2;
+    color: var(--global-accent-text-color);
     text-decoration: none;
     font-size: 20pt;
     font-weight: bold;
 }
 .navItems {
+    flex: 1;
     margin: auto;
     display: flex;
     color: black;
-    justify-content: end;
+    justify-content:flex-end;
 }
 
 .navText {
-    padding-left: 5%;
-    padding-right: 5%;
-    color: var(--main-text-color);
+    padding-left: 3%;
+    padding-right: 3%;
+    color: var(--global-main-text-color);
     text-decoration: none;
 }
 
 .navText:visited {
-    color: var(--main-text-color);
+    color: var(--global-main-text-color);
     text-decoration: none;
 }
 
 .navText:hover{
-    color: var(--accent-text-color);
+    color: var(--global-accent-text-color);
+}
+
+@media (max-width: 800px){
+    .navItems {
+        font-size: 10pt;
+    }
+    .navAuthorName{
+        display: none;
+    }
 }
