@@ -1,63 +1,115 @@
 .AboutMeTitle{
     padding: 0%;
     margin: auto;
+    font-size: 4rem;
+    color: var(--global-main-text-color);
 }
-.flex {
+.flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
 }
+
+.flexLeft {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+.AboutMeWrapper {
+    padding: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+}
+
+.AboutMeListWrapper {
+    list-style-type: none;
+	counter-reset: li;
+    columns: 150px;
+}
+
+.AboutMeList {
+    color: var(--global-main-text-color);
+}
+
+.AboutMeList:before {
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+    color: var(--global-accent-text-color);
+    margin-right: 0.25em;
+}
+.AboutMeSubTitle {
+    font-size: 2rem;
+    color: var(--global-main-text-color);
+}
+.AboutMeDesc{
+    font-size: 1rem;
+    color: var(--global-main-text-color);
+}
+.AboutMeDescWrapper {
+    width: 50%;
+}
+
+.AboutMe-ProjectsLink {
+    text-decoration: none;
+    color: var(--global-accent-text-color);
+    font-weight: bold;
+}
 .TitleText {
     text-align: center;
     margin: 0;
     z-index: 1;
+    color: var(--global-main-text-color);
+    font-size:4rem;
 }
 
 .SupportingText {
     text-align: center;
     visibility: hidden;
     z-index: 1;
+    color: var(--global-main-text-color);
+    font-size: 2rem;
 }
 
 .FadeIn2s {
-    animation: fadeIn 2s;
+    animation: Global-fadeIn 2s;
     animation-fill-mode: forwards;
 }
 .FadeIn3s {
-    animation: fadeIn 2s;
-    animation-delay: 2s;
+    animation: Global-fadeIn 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 .FadeIn4s {
-    animation: fadeIn 2s;
-    animation-delay: 4s;
+    animation: Global-fadeIn 2s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
 .FadeIn5s {
-    animation: fadeIn 2s;
-    animation-delay: 6s;
+    animation: Global-fadeIn 2s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
-.custom-shape-divider-bottom-1655858920 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
 
-.custom-shape-divider-bottom-1655858920 svg {
-    position: relative;
-    display: block;
-    width: calc(149% + 1.3px);
-    height: 264px;
-}
-
-.custom-shape-divider-bottom-1655858920 .shape-fill {
-    fill: var(--global-main-accent-bg-color);
+@media screen and (max-width: 900px) {
+    .AboutMeTitle {
+        font-size: 3rem;
+    }
+    .AboutMeSubTitle {
+        font-size:1.5rem;
+    }
+    .AboutMeWrapper {
+        flex-direction: column;
+        padding: 5vh;
+    }
+    .AboutMeDescWrapper {
+        width: auto;
+    }
 }

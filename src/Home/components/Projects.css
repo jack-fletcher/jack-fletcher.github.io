@@ -1,0 +1,100 @@
+.Project-Carousel {
+    margin: auto;
+    width: 75%;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+
+}
+.Projects-Section-Title {
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+    color: var(--global-main-text-color);
+}
+.Project-Card {
+    background-color: var(--global-main-bg-color);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 3;
+    height: 275px;
+    justify-content: space-between;
+
+}
+
+.Project-FlexRow {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.Project-Title {
+    font-size: 2rem;
+    color: var(--global-main-text-color);
+}
+.Project-Description {
+    color: var(--global-main-text-color);
+}
+
+.Project-Bubble {
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: var(--global-main-text-color);
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    margin: auto;
+    margin-top: 10px;
+    height: 50px;
+    text-decoration: none;
+    color: var(--global-main-text-color);
+    display: flex;
+    align-items: center;
+}
+
+.Project-Bubble p {
+    text-decoration: none;
+    color: var(--global-main-text-color);
+}
+.Project-Bubble:hover{
+    background-color: var(--global-accent-text-color);
+}
+
+.Project-dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.Project-GitHub {
+    text-align: center;
+    height: 50px;
+    width: auto;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Project-GitHub-Img {
+    height: 45px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    color: var(--global-main-text-color);
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .Project-Carousel {
+        width: 95%;
+    }
+    .Project-Card{
+   
+    }
+
+    .Projects-Section-Title {
+        font-size: 3rem;
+    }
+    .Project-Title {
+        font-size: 1.5rem;
+    }
+}

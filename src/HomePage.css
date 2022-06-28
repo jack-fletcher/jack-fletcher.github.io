@@ -5,7 +5,22 @@
     --global-accent-text-color: #f0a04b;
     --global-accent-underline-color: #f6c453;
 }
-.FullScreen {
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+
+.Global-Underline {
+    text-decoration: underline;
+    text-decoration-color: var(--global-accent-underline-color);
+}
+.Global-FullScreen {
     position: relative;
     /* Height and width fallback for older browsers. */
     height: 100%;
@@ -20,18 +35,80 @@
     /* Remove any browser-default margins. */
     margin: 0;
 }
-.HomePage {
+.Global-HomePage {
     background-color: var(--global-main-bg-color);
 }
-.backgroundColour {
+.Global-BackgroundColour {
     background-color: var(--global-main-bg-color);
 }
 
-.altBackgroundColour {
+.Global-Rounded {
+    border: 0;
+    border-top: 1px solid var(--global-accent-underline-color);
+    height: 10px;
+}
+
+.Global-Half-Width {
+    width: 50%;
+}
+.Global-altBackgroundColour {
     background-color: var(--global-main-accent-bg-color);
 }
-@keyframes fadeIn {
+
+.Global-WaveBottomGreen {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+.Global-WaveBottomGreen svg {
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 264px;
+}
+
+.Global-WaveBottomGreen .shape-fill {
+    fill: var(--global-main-accent-bg-color);
+}
+
+.Global-WaveBottomPale {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+.Global-WaveBottomPale svg {
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 264px;
+}
+
+.Global-WaveBottomPale .shape-fill {
+    fill: var(--global-main-bg-color);
+}
+@keyframes Global-fadeIn {
     0% { opacity: 0; visibility: hidden;}
     100% { opacity: 1; visibility: visible;}
   }
   
+
+  @media screen and (max-width: 1000px) {
+
+    .Global-WaveBottomGreen svg {
+        height: 71px;
+    }
+
+    .Global-WaveBottomPale svg {
+        height: 71px;
+    }
+  }

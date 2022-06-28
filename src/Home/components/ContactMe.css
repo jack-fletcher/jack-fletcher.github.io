@@ -1,0 +1,25 @@
+.ContactMe-Title{
+    position: relative;
+    text-align: center;
+    padding: 1.5rem;
+    z-index: 10;
+    color: var(--global-main-text-color);
+    font-size: 3rem;
+}
+
+.ContactMe-ButtonWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+    padding: 4rem;
+}
+
+.ContactMe-Btn {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--global-main-text-color);
+}
+
+.ContactMe-Btn:hover {
+    color: var(--global-accent-underline-color);
+}

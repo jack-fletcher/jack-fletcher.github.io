@@ -1,41 +1,46 @@
 
-.nav {
- animation: fadeIn 3s;
+.navigation {
+ animation: Global-fadeIn 3s;
  background-color: var(--global-main-bg-color); 
  position: fixed;
  width: 100%;
  display: flex;
- padding-top: 10px;
+ padding-top: 20px;
  padding-bottom: 10px;
- z-index: 1;
+ z-index: 999;
 }
+
+.navigation-menu ul {
+    display: flex;
+    margin: auto;
+  }
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  .navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
 
 .navAuthorName{
     padding-left: 5%;
     padding-right: 5%;
     justify-content: start;
-    flex: 2;
+    flex: 1;
     color: var(--global-accent-text-color);
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 1.5rem;
     font-weight: bold;
+    transition: color 0.2s ease-in-out;
 }
-.navItems {
-    flex: 1;
-    margin: auto;
-    display: flex;
-    color: black;
-    justify-content:flex-end;
+.navAuthorName:hover{
+    color: var(--global-main-text-color);
 }
 
 .navText {
-    padding-left: 3%;
-    padding-right: 3%;
-    color: var(--global-main-text-color);
-    text-decoration: none;
-}
 
-.navText:visited {
     color: var(--global-main-text-color);
     text-decoration: none;
 }
@@ -44,11 +49,62 @@
     color: var(--global-accent-text-color);
 }
 
-@media (max-width: 800px){
-    .navItems {
-        font-size: 10pt;
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--global-accent-text-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  .hamburger:hover {
+    background-color: var(--global-main-text-color);
+  }
+
+@media screen and (max-width: 768px){
+    .hamburger {
+        display: block;
     }
-    .navAuthorName{
+    .navigation-menu ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: var(--global-main-bg-color);
         display: none;
+    }
+    .navigation-menu.expanded ul {
+        display: block;
+        z-index: 999;
+        
+    }
+    .navigation-menu.expanded ul {
+      display: block;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+  }
+
+  .navigation-menu.expanded ul li {
+    height: 80px;
+    line-height: 80px;
+}
+    .navigation-menu li {
+        text-align: center;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .navAuthorName {
+
     }
 }

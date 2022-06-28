@@ -1,0 +1,35 @@
+.wrapper {
+    width:100px;
+    position: fixed; 
+    left:0; 
+    top: 188px;
+    z-index: 999;
+    }
+
+.sidebar {
+    width:50px;
+    float:left;
+    }
+
+.Sticker {
+    padding: 10px;
+    height:50px;
+    width:50px;
+}
+
+.Img {
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    color: var(--global-main-text-color);
+}
+
+.Img:hover {
+    scale: 1.1;
+    color: var(--global-accent-underline-color);
+}
+@media screen and (max-width: 950px){
+    .wrapper {
+        display: none;
+    }
+}
