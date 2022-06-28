@@ -33,6 +33,7 @@
 }
 .Project-Description {
     color: var(--global-main-text-color);
+    font-size: 1.5rem;
 }
 
 .Project-Bubble {
@@ -87,8 +88,8 @@
     .Project-Carousel {
         width: 95%;
     }
-    .Project-Card{
-   
+    .Project-Description{
+        font-size: 1.1rem;
     }
 
     .Projects-Section-Title {
