@@ -1,14 +1,51 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './NavBar.css';
 
 export default function NavBar(){
 
     const [isNavExpanded, setIsNavExpanded] = useState(false)
 
+
+    useEffect(() => {
+        SetInitialSliderState();
+    }, []);
+    function ToggleDarkMode() {
+        if (document.documentElement.classList.contains("light")) {
+            document.documentElement.classList.remove("light")
+            document.documentElement.classList.add("dark")
+          } else if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark")
+            document.documentElement.classList.add("light")
+          }
+    }
+    function SetInitialSliderState(){
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add("dark")
+          } else {
+            document.documentElement.classList.add("light")
+          }
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+            document.getElementById("nav-slider").checked = false;
+            console.log("hit1");
+        }
+
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
+            document.getElementById("nav-slider").checked = true;
+            console.log("hit2");
+        }
+    }
     return (
         <header>
             <nav className="navigation">
                 <p className="navAuthorName"> Jack Fletcher </p>
+                {/* Switch shamelessly used from : https://codepen.io/alvarotrigo/pen/zYPydpB */}
+                <div className='nav-toggle-switch'>
+            <label className="nav-toggle-label" onChange={() => ToggleDarkMode()}>
+                <input id="nav-slider"className="nav-toggle-checkbox" type = 'checkbox'/>
+                <span className='nav-slider'></span>
+            </label>
+        </div>
                 <button className="hamburger" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
                 {/* icon from heroicons.com */}
                     <svg
