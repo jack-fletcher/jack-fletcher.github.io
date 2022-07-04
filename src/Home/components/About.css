@@ -50,7 +50,6 @@
     color: var(--global-main-text-color);
 }
 .AboutMeDesc{
-    font-size: 1rem;
     color: var(--global-main-text-color);
     font-size: 1.5rem;
 }
@@ -103,7 +102,7 @@
 
 @media screen and (max-width: 900px) {
     .AboutMeTitle {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .AboutMeSubTitle {
         font-size:1.5rem;
@@ -114,5 +113,11 @@
     }
     .AboutMeDescWrapper {
         width: auto;
+    }
+    .AboutMeList {
+        font-size: 1rem;
+    }
+    .AboutMeDesc {
+        font-size: 1rem;
     }
 }

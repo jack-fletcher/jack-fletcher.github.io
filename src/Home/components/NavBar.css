@@ -106,6 +106,10 @@
         margin: 0;
         font-size: 2rem;
     }
+
+    .nav-toggle-switch {
+      display: none;
+    }
   }
 
   .nav-toggle-switch {

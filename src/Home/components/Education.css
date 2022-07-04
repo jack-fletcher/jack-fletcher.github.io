@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 900px) {
     .EducationTitle {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .EducationSubTitle {
         font-size:1.5rem;
@@ -54,6 +54,9 @@
     .EducationWrapper {
         flex-direction: column-reverse;
         padding: 5vh;
+    }
+    .EducationDesc {
+        font-size: 1rem;
     }
     .EducationDescWrapper {
         width: auto;
