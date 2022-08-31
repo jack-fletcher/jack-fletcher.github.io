@@ -1,4 +1,4 @@
-import React, {Component } from "react";
+import React from "react";
 import './About.css';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -42,7 +42,8 @@ export default function About(){
               <li className="AboutMeList"> Unity Engine </li>
               <li className="AboutMeList"> Python </li>
               <li className="AboutMeList"> C++ </li>
-              <li className="AboutMeList"> React/React Native </li>
+              <li className="AboutMeList"> React </li>
+              <li className="AboutMeList"> React Native </li>
               <li className="AboutMeList"> Oracle SQL </li>
             </ul>
             <p className="AboutMeDesc"> Curious about my work? See my <a className="AboutMe-ProjectsLink" href="#projects"> projects </a> here </p>
