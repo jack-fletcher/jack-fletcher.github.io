@@ -21,7 +21,7 @@ export default function ContactMe(){
         <div id="contact" >
             <motion.h1 ref={titleRef} animate={titleInView ? "open" : "closed"} variants={variants} transition={{ duration: 1.5 }} className="ContactMe-Title"> Fancy a chat? </motion.h1>
             <div className="ContactMe-ButtonWrapper">
-            <motion.div ref={titleRef} animate={titleInView ? "open" : "closed"} variants={variants} transition={{ duration: 1.5 }}> <a className='ContactMe-Btn' href="mailto:dev@jack-fletcher.me"><FontAwesomeIcon className="" icon={faEnvelope} size="3x" /></a></motion.div>
+            <motion.div ref={titleRef} animate={titleInView ? "open" : "closed"} variants={variants} transition={{ duration: 1.5 }}> <a className='ContactMe-Btn' href="mailto:dev@jack-fletcher.com"><FontAwesomeIcon className="" icon={faEnvelope} size="3x" /></a></motion.div>
                 <motion.div ref={titleRef} animate={titleInView ? "open" : "closed"} variants={variants} transition={{ duration: 1.5 }}> <a className='ContactMe-Btn' href="https://www.linkedin.com/in/-jack-fletcher/"><FontAwesomeIcon className="" icon={faLinkedin} size="3x" /></a></motion.div>
                 <motion.div ref={titleRef} animate={titleInView ? "open" : "closed"} variants={variants} transition={{ duration: 1.5 }}> <a className='ContactMe-Btn' href="https://github.com/jack-fletcher"><FontAwesomeIcon className="" icon={faGithub} size="3x" /></a></motion.div>
                     </div>
