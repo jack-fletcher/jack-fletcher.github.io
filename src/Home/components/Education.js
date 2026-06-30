@@ -25,8 +25,7 @@ export default function Education(){
             <div className="EducationWrapper"> 
             <div className="EducationDescWrapper"> 
             <motion.h2 whileHover={{scale: 1.1}} className="EducationSubTitle"> Education </motion.h2>
-            <p className="EducationDesc"> I graduated from the University of Plymouth with a 2:1 in 2020; after studying Computing & Games Development. After working for a year; I returned to my academic studies and I am currently undertaking a part time Computer Science Masters at Staffordshire University.
-            I am currently looking for software engineering opportunities in the UK. </p>
+            <p className="EducationDesc">I’m a game designer at Jagex, working on RuneScape. I hold an MSc in Computer Science from Staffordshire University, where I graduated with a Distinction, and a BSc in Computing & Games Development from the University of Plymouth (2:1).</p>
             </div>
             <div> 
             <motion.h1 whileHover={{scale: 1.1}} className="EducationTitle"> Relentlessly <p className="Global-Underline"> curious. </p> </motion.h1>
